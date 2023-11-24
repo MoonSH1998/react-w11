@@ -1,5 +1,5 @@
 import { Component } from "react";
-import Content from "./components/Content";
+import Content from "./components/content";
 import TOC from "./components/TOC";
 import Subject from "./components/Subject";
 import "./styles.css";
@@ -42,7 +42,8 @@ class App extends Component {
       _image = null;
     if (this.state.mode === "welcome") {
       _title = this.state.welcome.title;
-      (_desc = this.state.welcome.desc), (_image = this.state.welcome.image);
+      _desc = this.state.welcome.desc;
+      _image = this.state.welcome.image;
     } else if (this.state.mode === "read") {
       var i = 0;
       while (i < this.state.contents.length) {
